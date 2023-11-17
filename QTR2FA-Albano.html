@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>QTR2 FA</title>
+            <meta charset="UTF-8">
+            <meta name="author" content="Arrianne Jeshaviah P. Albano">
+            <meta name="Section" content="Calcium">
+            <meta name="description" content="2QR FA">
+    </head>
+	<style>
+		 #link1{
+			color:white;
+		background-color:#2e5d6e;
+			
+		}
+		 #link2{
+			color:white;
+		 background-color:#5cb8a1;
+			
+		}
+		#link1:hover{
+			color:black;
+		 background-color:orange;
+			
+		}
+		#link2:hover{
+			color:black;
+		 background-color:orange;
+			
+		}
+		#link1:visted{
+			color:white;
+		 background-color:#83ebb7;
+		
+		}
+		div{
+			border: 2px solid black;
+			width: 200px;
+			height: 200px;
+			padding: 10px;
+			
+	  }
+	  #link1:focus{
+		 color:white;
+		 background-color:darkblue;
+		 }
+		
+	 #link2:focus{
+		color:white;
+		background-color:blue;
+		}
+		div:target#div1{
+			background-color: #2e5d6e;
+			color:yellow;
+			
+			}
+		
+		div:target#div2{
+			background-color:#5cb8a1;
+			color:yellow;
+			border:10px dotted green;
+			}
+	
+		
+	</style>
+	<body>
+		<h1><a id="link1" href="#div1">First Link </a> <a id="link2" href="#div2"> Second Link</a></h1>
+		<br>
+		<div id="div1">Div1</div>
+		<br>
+		<div id="div2">Div2</div>
+	</body>
