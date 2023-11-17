@@ -7,62 +7,84 @@
             <meta name="Section" content="Calcium">
             <meta name="description" content="2QR FA">
     </head>
+
 	<style>
-		 #link1{
+		#link1{
 			color:white;
 			background-color:#2e5d6e;
-			font-family:monospace;
+			text-decoration: none;
+			}
 			
-		}
-		 #link2{
+		#link1:hover{
+			color:purple;
+			background-color:skyblue;
+			}
+			
+		#link1: active{
+			color:white;
+			background-color:blue;
+			}
+			
+		#link1:visted{
+			color:lavender;
+			background-color:yellow;
+			font-family:comic sans;
+			}
+			
+		#link1:focus{
+			color:white;
+			background-color:darkblue;
+			}
+			
+		#link2:link{
 			color:white;
 			background-color:#5cb8a1;
-			font-family:monospace;
-			
-		}
-		#link1:hover{
-			color:black;
-			background-color:orange;
-			font-family:monospace;
-			
-		}
-		#link2:hover{
-			color:black;
-			background-color:orange;
-			font-family:monospace;
-			
-		}
-		#link1:visted{
-			color:white;
-			background-color:#83ebb7;
-			font-family:monospace;
+			}
 		
-		}
+		#link2:hover{
+			color:darkred;
+			background-color:lightblue;
+			font-family:Sans Serif;
+			}
+		
+		#link2:visted{
+			color:white;
+			background-color:orange;
+			}
+		
+		#link2:focus{
+			color:white;
+			background-color:blue;
+			}
+		
+		#link2:visted{
+			color:white;
+			background-color:orange;
+			}
+		
 		div{
-			border: 2px solid black;
+			border: 3px solid black;
 			width: 200px;
-			height: 200px;
+			height: 150px;
 			padding: 10px;
-			
-		}
-		div:target#div1{
-			background-color: #2e5d6e;
-			color:yellow;
-			
 			}
 		
 		div:target#div2{
-			background-color:#5cb8a1;
-			color:yellow;
-			border:10px dotted green;
+			background-color: lavender;
+			color:darkblue;
 			}
-	
 		
-	</style>
-	<body>
-		<h1><a id="link1" href="#div1">First Link </a> <a id="link2" href="#div2"> Second Link</a></h1>
-		<br>
-		<div id="div1">Div1</div>
-		<br>
-		<div id="div2">Div2</div>
-	</body>
+		div:target#div1{
+			background-color:lightgreen;
+			color:purple;
+			}
+			
+		</style>
+		<body>
+		<p><a id="link1" href="#div1">Change Div1</a><a id="link2" href="#div2">Change Div2</a></p>
+			<br>
+			<div id="div1">Div1</div>
+			<br>
+			<div id="div2">Div2</div>
+		</body>
+</html>
